@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+main {
+    padding: 25px;
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #6a11cb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#registration-form form div {
+    margin-bottom: 20px;
+}
+
+#registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #555;
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="number"] {
+    width: calc(100% - 24px); /* Adjusted for padding */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#registration-form input[type="text"]:focus,
+#registration-form input[type="email"]:focus,
+#registration-form input[type="number"]:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.2);
+}
+
+#registration-form button {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#registration-form button:hover {
+    background: linear-gradient(to right, #5e0ead, #1e63d1);
+    transform: translateY(-2px);
+}
+
+#registration-form button:active {
+    transform: translateY(0);
+}
+
+#attendee-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#attendee-list li {
+    padding: 12px;
+    border-bottom: 1px solid #eef;
+    background-color: #fafafa;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#attendee-list li:last-child {
+    border-bottom: none;
+}
+
+#attendee-list li:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 30px;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #e8f5e9; /* Softer green */
+    color: #2e7d32; /* Darker green text for contrast */
+    border: 1px solid #a5d6a7;
+    border-radius: 6px;
+    text-align: center;
+} 

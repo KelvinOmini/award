@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Registrations</title>
+    <link rel="stylesheet" href="style.css"> <!-- Reusing the main stylesheet -->
+    <style>
+        /* Additional styles specific to admin page */
+        main {
+            max-width: 900px; /* Wider for table data */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f2f5;
+            font-weight: 600;
+        }
+        .delete-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .delete-btn:hover {
+            background-color: #c0392b;
+        }
+        nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin - Registered Attendees</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Back to Registration Page</a>
+        </nav>
+        <section id="admin-registrations">
+            <h2>Current Registrations</h2>
+            <table id="registrations-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Tickets</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="registrations-tbody">
+                    <!-- Registrations will be populated here by JavaScript -->
+                </tbody>
+            </table>
+            <p id="no-registrations" style="display:none; text-align:center; margin-top:20px;">No registrations found.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your School Name - Admin Panel</p>
+    </footer>
+    <script src="admin_script.js"></script>
+</body>
+</html> 
